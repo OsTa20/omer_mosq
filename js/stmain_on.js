@@ -260,3 +260,4 @@ oReq.onload = function(e) {
 }
 oReq.send(); 
 localStorage.pageupdate = 'y';
+alert(9);
