@@ -1,0 +1,66 @@
+<html>
+  <head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=devic-width,initial-scale=1.0">
+    <title>stmain_on</title>   
+  </head>   
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      direction: rtl;
+    }
+    body {
+      background-image: url('../img/bg1.jpg');
+      position: relative;
+      z-index: 1;
+    }
+    .nosh {
+      display: none;
+    }
+    .maindivtem {
+      background-image: url('../img/me.png');
+      background-size: 100% 100%;
+      width: 350px;
+      height: 400px;
+      margin: 20px auto;
+      border-radius: 20px;
+      padding-top: 100px;
+    }
+    .maindivtem .img {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+    }
+    .maindivtem p {
+      font-size: 20px;
+      text-align: center;
+      margin: 15px;
+    }
+    .maindivtem {
+      position: relative;
+      top: calc((100% - 400px)/2);
+      margin: 0 auto;
+    }
+    .maindivtem .img {
+      margin: 10 auto 30px;
+    }
+  </style>
+  <body>   
+    <div class="maindivtem">
+      <img class="img" src="../img/lo1.gif">
+      <p style="color:brown">الانتظار حسب سرعة الانترنت</p>
+    </div>
+  </body> 
+  <script src="../js/minelib.js"></script> 
+  <script src="../js/stmain_on.js"></script> 
+  <script>
+    window.onload = function(){
+      setTimeout(function(){
+        window.history.back();
+      },5000);
+    }
+  </script>
+</html> 
