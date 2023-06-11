@@ -1,3 +1,4 @@
+alert(88);
 let id = localStorage.id;
 let myid = localStorage.lmyid.split(',');
 let indexvar = myid.indexOf(id);
