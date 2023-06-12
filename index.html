@@ -45,16 +45,9 @@
     var time = setInterval(function(){
       if(localStorage.pageupdate == 'y'){
         clearInterval(time);
+        alert('تم تحديث المعلومات');
         window.history.back();
       }
     },1000);
-    /*
-    window.onload = function(){
-      setTimeout(function(){
-      clearInterval(time);
-        window.history.back();
-      },5000);
-    }
-    */
   </script>
 </html> 
