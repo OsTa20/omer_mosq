@@ -44,8 +44,11 @@
   <script>
     var time;
     var update = localStorage.pageupdate;
-    if(update == 'y')
+    var time2 = setInterval(function(){
+      if(update == 'y')
       alert('تم تحديث المعلومات');
+    },1000);
+    
     time = setTimeOut(function(){
       alert('تم تحديث المعلومات');
       window.history.back();
