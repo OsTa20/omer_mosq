@@ -44,11 +44,11 @@
   <script>
     var time;
     var update = localStorage.pageupdate;
-    time = setInterval(function(){
-      if(update == "y"){
-        alert('تم تحديث المعلومات');
-        window.history.back();
-      }
-    },1000);
+    if(update == 'y')
+      alert('تم تحديث المعلومات');
+    time = setTimeOut(function(){
+      alert('تم تحديث المعلومات');
+      window.history.back();
+    },4000);
   </script>
 </html> 
