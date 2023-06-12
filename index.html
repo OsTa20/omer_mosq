@@ -42,12 +42,8 @@
     </div>
   </body> 
   <script>
-    var update = localStorage.pageupdate;
-    var time2 = setInterval(function(){
-      if(update == 'y'){
-        alert('تم تحديث المعلومات');
-        window.history.back();
-      }
-    },1000);
+    setTimeout(function(){
+      window.history.back();
+    },4000);
   </script>
 </html> 
