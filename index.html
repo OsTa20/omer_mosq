@@ -42,10 +42,17 @@
     </div>
   </body> 
   <script>
+    var time = setInterval(function(){
+      if(localStorage.pageupdate == 'y'){
+        window.history.back();
+      }
+    },1000);
+    /*
     window.onload = function(){
       setTimeout(function(){
         window.history.back();
       },5000);
     }
+    */
   </script>
 </html> 
